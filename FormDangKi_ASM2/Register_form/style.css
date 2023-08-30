@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: #333;
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.main {
+  background: #f9f9f9;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  width: 500px;
+  min-height: 100px;
+  padding: 32px 24px;
+  text-align: center;
+  background: #f0f0f0;
+  border-radius: 15px;
+  margin: 24px;
+  align-self: center;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form .heading {
+  font-size: 2.2rem;
+  color: #444;
+}
+
+.form-group {
+  display: flex;
+  margin-bottom: 18px;
+  flex-direction: column;
+}
+
+.form-label,
+.form-message {
+  text-align: left;
+}
+
+.form-label {
+  margin-left: 6px;
+  font-weight: 500;
+  padding-bottom: 4px;
+  line-height: 1.6rem;
+  font-size: 1.3rem;
+  color: #555;
+}
+
+.form-control {
+  height: 38px;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 1.3rem;
+  transition: border-color 0.3s;
+}
+
+.form-control:hover {
+  border-color: #ff9900;
+}
+
+.form-group.invalid .form-control {
+  border-color: #f44336;
+  background: #ffe0e0;
+}
+
+.form-group.invalid .form-message {
+  color: #f44336;
+}
+
+.form-message {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  padding: 4px 0 0 7px;
+  color: #666;
+}
+
+.form-submit {
+  outline: none;
+  background-color: #ff9900;
+  margin-top: 12px;
+  padding: 10px 14px;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  width: 40%;
+  float: left;
+  font-size: 14px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-submit:hover {
+  background-color: #e68500;
+  /* Darker color on hover */
+}
+
+.spacer {
+  margin-top: 36px;
+}
+
+.form-group.invalid .gender-container,
+.form-group.invalid .hobbies-container {
+  background: #ffe0e0;
+}
+
+.gender-container,
+.hobbies-container {
+  display: flex;
+  align-items: center;
+  justify-content: flsex-start;
+  padding-left: 10px;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid #e57373;
+}
+
+#note {
+  height: 70px;
+}
+
+.gender-item,
+.hobbies-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  font-size: 15px;
+  color: #555;
+}
